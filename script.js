@@ -11,7 +11,7 @@ document.addEventListener('mouseup', function(){
     is_clicked = false
 })
 
-for (let i = 0; i < 800; i += 1){
+for (let i = 0; i < 2700; i += 1){
     let block = document.createElement('div')
     block.classList.add('block')
     workplace.appendChild(block)
@@ -63,5 +63,13 @@ earaser.addEventListener('click', function(){
     earaser.classList.add('selected')
 })
 
-
+document.getElementById("download").addEventListener('click', function(){
+    domtoimage.toJpeg(document.getElementById('my-node'), { quality: 0.95})
+    .then(function (dataUrl){
+        var link = document.createElement('a');
+        link.download = 'my-image-name.Jpeg';
+        link.href = dataUrl;
+        link.click();
+    })
+})
 
