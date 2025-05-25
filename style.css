@@ -12,10 +12,10 @@ body {
 
 .workplace {
     display:grid;
-    width: 100vw;
-    height: 50vw;
-    grid-template-columns: repeat(40, 1fr);
-    grid-template-rows: repeat(20, 1fr);
+    width: 630px;
+    height: 630px;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(30, 1fr);
     border: 1px solid black;
     gap: 1px;
     background-color: rgb(70, 71, 70);;
