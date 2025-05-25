@@ -71,5 +71,5 @@ document.getElementById("download").addEventListener('click', function(){
         link.href = dataUrl;
         link.click();
     })
-})
+}) 
 
