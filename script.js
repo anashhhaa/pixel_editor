@@ -11,7 +11,7 @@ document.addEventListener('mouseup', function(){
     is_clicked = false
 })
 
-for (let i = 0; i < 2700; i += 1){
+for (let i = 0; i < 900; i += 1){
     let block = document.createElement('div')
     block.classList.add('block')
     workplace.appendChild(block)
